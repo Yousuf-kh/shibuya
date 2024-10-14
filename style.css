@@ -61,7 +61,7 @@ nav {
 
   h1 {
     /* font-size: 500px; */
-    font-size: clamp(6.875rem, 0.3013rem + 27.6786vw, 26.25rem);
+    font-size: clamp(5rem, -0.4237rem + 27.1186vw, 25rem);
     line-height: 1;
     @media (max-width: 768px) {
       padding: 30px 0;
@@ -439,7 +439,7 @@ footer {
 
     :nth-child(2) {
       text-align: center;
-      font-size: clamp(6.875rem, 0.3013rem + 27.6786vw, 26.25rem);
+      font-size: clamp(5rem, -0.4237rem + 27.1186vw, 25rem);
       display: none;
 
       @media (max-width: 768px) {
