@@ -63,7 +63,7 @@ nav {
     /* font-size: 500px; */
     font-size: clamp(6.875rem, 0.3013rem + 27.6786vw, 26.25rem);
     line-height: 1;
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       padding: 30px 0;
     }
   }
@@ -234,7 +234,7 @@ nav {
     background-size: cover;
 
     @media (max-width: 500px) {
-      min-height: 200px;
+      min-height: 250px;
     }
 
     &:hover {
@@ -287,5 +287,164 @@ nav {
   .plan-img2 {
     max-width: 200px;
     width: 100%;
+  }
+}
+
+.team-wrap {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  align-items: center;
+  gap: 50px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  .box2 {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.team {
+  padding: 50px 0px;
+}
+
+.team-wrap > .box1 > h1 {
+  font-size: clamp(3.125rem, -0.0558rem + 13.3929vw, 12.5rem);
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.box1-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    min-height: 290px;
+    background-size: 125%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: 2px solid #000;
+    background-position: center;
+
+    @media (max-width: 768px) {
+      min-height: 260px;
+      background-size: 150%;
+    }
+
+    h1 {
+      color: #fff;
+      padding: 20px;
+    }
+  }
+
+  .card1 {
+    background-image: url(https://shibuya-bay.vercel.app/assets/team-2-f8113e02.png);
+  }
+
+  .card2 {
+    background-image: url(https://shibuya-bay.vercel.app/assets/team-4-8d861bac.png);
+  }
+
+  .card3 {
+    background-image: url(https://shibuya-bay.vercel.app/assets/team-3-204d37e4.png);
+  }
+
+  .card4 {
+    background-image: url(https://shibuya-bay.vercel.app/assets/team-1-71317594.png);
+  }
+}
+
+.box1 {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding:30px */
+    padding: clamp(0.625rem, 0.2009rem + 1.7857vw, 1.875rem);
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      a {
+        font-size: 30px;
+        margin: 30px 0;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #251607;
+    /* font-size: 30px */
+    font-size: clamp(0.9375rem, 0.8315rem + 0.4464vw, 1.25rem);
+    font-weight: 600;
+  }
+
+  div {
+    img {
+      max-width: 40px;
+    }
+  }
+}
+
+.top-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box1 {
+    img {
+      width: 100%;
+    }
+  }
+
+  .box2 {
+    img {
+      width: 100%;
+      border: 2px solid #251607;
+    }
+  }
+}
+
+footer {
+  padding-top: 20px;
+
+  .container {
+    :nth-child(1) {
+      text-align: center;
+      font-size: clamp(3.75rem, 1.2054rem + 10.7143vw, 11.25rem);
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    :nth-child(2) {
+      text-align: center;
+      font-size: clamp(6.875rem, 0.3013rem + 27.6786vw, 26.25rem);
+      display: none;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
   }
 }
